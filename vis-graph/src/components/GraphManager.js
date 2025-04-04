@@ -4,7 +4,7 @@ import TestGraph from './graphTest';
 import TableView from './TableView'; 
 import '../style/graphManager.css';
 // import excelFile from '../assets/CharacterFile3.numbers'; // Excel file in the assets folder
-import excelFile from '../assets/egyptData3.numbers'; // Excel file in the assets folder
+import excelFile from '../assets/egyptData4.numbers'; // Excel file in the assets folder
 
 const GraphManager = ({ fileUploaded, setFileUploaded, showTableView, filteredData }) => {
   const [nodes, setNodes] = useState([]);
