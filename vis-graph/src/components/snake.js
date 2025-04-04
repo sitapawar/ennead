@@ -35,7 +35,7 @@ class Snake extends React.Component {
   }
 
   render() {
-    const { fileUploaded, setFileUploaded, showTableView, filteredData } = this.props; // Get props
+    const { fileUploaded, setFileUploaded, showTableView, showAbout, filteredData } = this.props; // Get props
     const { apiResponse, error } = this.state; // Destructure apiResponse and error from state
 
     return (
@@ -46,6 +46,7 @@ class Snake extends React.Component {
           setFileUploaded={setFileUploaded}
           showTableView={showTableView} // Pass showTableView to GraphManager
           filteredData={filteredData}
+          showAbout={showAbout}
         />
       </div>
     );

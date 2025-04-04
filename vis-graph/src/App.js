@@ -8,6 +8,8 @@ function App() {
   const [fileUploaded, setFileUploaded] = useState(false);
   const [filteredData, setFilteredData] = useState(null); 
   const [showTableView, setShowTableView] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+
 
 
   const handleUploadClick = () => {
@@ -20,9 +22,21 @@ function App() {
   };
 
   const toggleTableView = () => {
-    setShowTableView(prevState => !prevState);
+    setShowTableView(prev => {
+      const newState = !prev;
+      if (newState) setShowAbout(false);
+      return newState;
+    });
   };
-
+  
+  const toggleAbout = () => {
+    setShowAbout(prev => {
+      const newState = !prev;
+      if (newState) setShowTableView(false);
+      return newState;
+    });
+  };
+    
   return (
     <div className="App">
       <Navbar
@@ -32,12 +46,15 @@ function App() {
         toggleTableView={toggleTableView}
         fileUploaded={fileUploaded}
         setFilteredData={setFilteredData}
+        showAbout={showAbout}
+        toggleAbout={toggleAbout}
       />
       <div className="Main">
         <Snake
           fileUploaded={fileUploaded}
           setFileUploaded={setFileUploaded}
           showTableView={showTableView}
+          showAbout={showAbout}
           filteredData={filteredData}
         />
       </div>
