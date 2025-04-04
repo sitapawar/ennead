@@ -1,0 +1,87 @@
+/* tableView.css */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+.TableView {
+    margin: 2px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    margin-top: 60px;
+    padding: 20px;
+  }
+  .table-container {
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-width: 100%; /* Ensure the container doesn't exceed viewport width */
+    background-color: rgba(277, 264, 250, 0.87);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height:80vh;
+  }
+
+  .TableView button {
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+
+  .TableView button {
+    padding: 8px 15px; /* Add padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners for the button */
+    background-color: #000; /* Background color for the button */
+    color: white; /* Text color for the button */
+    font-size: 15px; /* Font size for the button text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    width: 30%;
+    font-family: serif;
+
+  }
+  
+  .TableView button:hover {
+    background-color: #000; /* Darker background color on hover */
+  }
+  
+  .TableView table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  h2{
+    font-family: 'Playfair Display SC', serif;
+  }
+  tbody td {
+    padding: 10px;
+    word-wrap: break-word; /* Allows text to wrap within cells */
+    font-family: serif;
+  }
+  
+  .TableView th, .TableView td {
+    border: 1px solid #7A5B4A;
+    padding: 8px;
+  }
+  
+  .TableView th {
+    /* background-color: #D2D9E5; */
+    font-family: 'Playfair Display SC', serif;
+
+  }
+  
+  table {
+    width: 100%;
+    max-width: 100%; /* Ensure the table doesn't exceed the container's width */
+    border-collapse: collapse;
+  }
+
+  @media (max-width: 650px) {
+    .TableView th, .TableView td {
+      padding: 4px;
+    }
+
+    tbody td {
+      font-size: 14px;
+    }
+    .TableView {
+      padding: 5px;
+    }
+  }
