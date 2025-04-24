@@ -25,7 +25,7 @@ The Editors of Encyclopaedia Britannica. "11 Egyptian Gods and Goddesses". Encyc
 Hart, George. *The Routledge Dictionary of Egyptian Gods and Goddesses*, Taylor & Francis Group, 2005. *ProQuest Ebook Central*, https://ebookcentral-proquest-com.revproxy.brown.edu/lib/brown/detail.action?docID=214769.<br></br>
 
 Pyramid texts are sourced from James P. Allen's translation of the Ancienct Egyptian Pyramid Texts (2005)<br></br>
-
+Manetho’s Aegyptiac <br><br>Wilkinson’s List of Egyptian Gods and Goddesses </br></br>
 Coffin Texts (Class Handouts)<br></br>
 
 Greenfield Papyrus</p>
